@@ -26,6 +26,9 @@ public class GraphNode {
     private boolean marked;
     private int level;
 
+    private double distance;
+
+    private GraphNode predecessor;
 
     // Klasse Edge
     private class Edge {
@@ -176,6 +179,23 @@ public class GraphNode {
         }
         return lList;
     }
+
+    public GraphNode getPredecessor() {
+        return predecessor;
+    }
+
+    public void setPredecessor(GraphNode predecessor) {
+        this.predecessor = predecessor;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public void setDistance(double distance) {
+        this.distance = distance;
+    }
+
 
 
 }
